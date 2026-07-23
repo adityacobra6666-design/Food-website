@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cart</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Your Cart</h1>
+
+<h2 id="items"></h2>
+
+<h2 id="total"></h2>
+
+<form action="/order" method="POST">
+
+    <input type="hidden" name="item" value="Food Order">
+
+    <input type="hidden" name="price" value="299">
+
+    <button type="submit">
+        Place Order
+    </button>
+
+</form>
+
+<script src="script.js"></script>
+
+<script>
+showCart();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "food-order",
+  "version": "1.0.0",
+  "description": "Food Ordering Website using Node.js",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Aditya",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

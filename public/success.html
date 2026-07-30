@@ -1,18 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>Success</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Success</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<h1>🎉 Order Placed Successfully!</h1>
+    <h1>🎉 Order Placed Successfully!</h1>
 
-<h2>Thank You For Ordering.</h2>
+    <div class="box">
 
-<a href="home.html">
-<button>Back Home</button>
-</a>
+        <h2>Thank You 😊</h2>
+
+        <br>
+
+        <p>Your order has been placed successfully.</p>
+
+        <p>Our team will start preparing your food shortly.</p>
+
+        <br><br>
+
+        <a href="menu.html">
+            <button>🍽 Order More</button>
+        </a>
+
+        <br><br>
+
+        <a href="home.html">
+            <button>🏠 Home</button>
+        </a>
+
+    </div>
+
+    <script>
+        // Cart ko empty kar do jab order place ho jaye
+        localStorage.removeItem("cart");
+    </script>
 
 </body>
+
 </html>

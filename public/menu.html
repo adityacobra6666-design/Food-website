@@ -1,38 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>Menu</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Menu</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<h1>Menu</h1>
+    <h1>🍽 Food Ordering System</h1>
 
-<div class="card">
-<h2>Pizza</h2>
-<p>₹299</p>
-<button onclick="addItem('Pizza',299)">Add To Cart</button>
-</div>
+    <div class="search-box">
 
-<div class="card">
-<h2>Burger</h2>
-<p>₹149</p>
-<button onclick="addItem('Burger',149)">Add To Cart</button>
-</div>
+        <input
+            type="text"
+            id="search"
+            placeholder="Search Food (Chicken, Beef, Pasta...)">
 
-<div class="card">
-<h2>Pasta</h2>
-<p>₹199</p>
-<button onclick="addItem('Pasta',199)">Add To Cart</button>
-</div>
+        <button onclick="searchFood()">
+            Search
+        </button>
 
-<br>
+    </div>
 
-<a href="cart.html">
-<button>Go To Cart</button>
-</a>
+    <br>
 
-<script src="script.js"></script>
+    <div id="foods" class="menu"></div>
+
+    <br>
+
+    <a href="cart.html">
+        <button>🛒 View Cart</button>
+    </a>
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>

@@ -1,34 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Cart</title>
+
 <link rel="stylesheet" href="style.css">
+
 </head>
-<body>
+<body onload="showCart()">
 
-<h1>Your Cart</h1>
+<h1>🛒 Your Cart</h1>
 
-<h2 id="items"></h2>
+<div id="items"></div>
 
-<h2 id="total"></h2>
+<div id="total"></div>
+
+<br>
 
 <form action="/order" method="POST">
 
-    <input type="hidden" name="item" value="Food Order">
+<input type="hidden" id="item" name="item">
 
-    <input type="hidden" name="price" value="299">
+<input type="hidden" id="price" name="price">
 
-    <button type="submit">
-        Place Order
-    </button>
+<button type="submit">
+
+Place Order
+
+</button>
 
 </form>
 
-<script src="script.js"></script>
+<br>
 
-<script>
-showCart();
-</script>
+<a href="menu.html">
+
+<button>
+
+⬅ Back To Menu
+
+</button>
+
+</a>
+
+<script src="script.js"></script>
 
 </body>
 </html>

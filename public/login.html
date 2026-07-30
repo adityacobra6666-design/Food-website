@@ -1,47 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FoodExpress Login</title>
+
+    <title>Login</title>
 
     <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
-<div class="box">
+    <h1>🍔 Food Ordering System</h1>
 
-    <h2>🍔 FoodExpress Login</h2>
+    <div class="box">
 
-    <form action="/login" method="POST">
+        <h2>Login</h2>
 
-        <input
-            type="text"
-            name="user"
-            placeholder="Username"
-            required
-        >
+        <br>
 
-        <input
-            type="password"
-            name="pass"
-            placeholder="Password"
-            required
-        >
+        <form action="/login" method="POST">
 
-        <button type="submit">
-            Login
-        </button>
+            <input
+                type="text"
+                name="user"
+                id="user"
+                placeholder="Username"
+                required>
 
-    </form>
+            <input
+                type="password"
+                name="pass"
+                id="pass"
+                placeholder="Password"
+                required>
 
-    <p style="margin-top:20px;color:#555;">
-        Demo Login <br><br>
-        Username : <b>admin</b><br>
-        Password : <b>1234</b>
-    </p>
+            <button type="submit">
 
-</div>
+                Login
+
+            </button>
+
+        </form>
+
+        <br>
+
+        <p id="msg"></p>
+
+        <br>
+
+        <h3>Demo Login</h3>
+
+        <p>
+            Username : <b>admin</b>
+        </p>
+
+        <p>
+            Password : <b>1234</b>
+        </p>
+
+    </div>
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>
